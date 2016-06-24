@@ -1,10 +1,4 @@
 //Custom Css
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900);
-
-$red: #E1332D;
-
 
 body{
 	margin:0;
@@ -13,111 +7,12 @@ body{
 
 img{
 	position:fixed;
-  	width: 100px;
+  	// width: 100px;
   	display: block;
   	left: 15%;
   	top: 5%;
   	margin:0 auto;
 	opacity:1;
-}
-
-btn {
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-size:16px;
-  font-weight: 400;
-  line-height: 45px;
-  margin: 0 auto 2em;
-  max-width: 160px; 
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-  width: 100%; 
-  
-  @media(min-width: 400px) {
-    display: inline-block;
-    margin-right: 2.5em;
-  
-    &:nth-of-type(even) {
-      margin-right: 0;
-    }
-  }
-  
-  @media(min-width: 600px) {
-  
-    &:nth-of-type(even) {
-      margin-right: 2.5em;
-    }
-    
-    &:nth-of-type(5) {
-      margin-right: 0;
-    }
-    
-  }
-  
-  &:hover { text-decoration: none; }
-  
-}
-
-
-.container { 
-  display: table-cell;
-  padding: 1em;
-  text-align: center; 
-  vertical-align: middle;
-
-	  a{
-	  	color: white;
-	  	text-decoration:none;
-	  	font-size:4em;
-
-	  }
-}
-
-
-
-.btn-1 {
-  // background: darken($red, 1.5%);
-  font-weight: 100;
-  
-  svg {
-    height: 90px;
-    left: 0;
-    position: absolute;
-    top: 0; 
-    width: 100%; 
-  }
-  
-  rect {
-    fill: none;
-    stroke: #fff;
-    stroke-width: 2;
-    stroke-dasharray: 422, 0;
-  }
-
-}
-
-.btn-1:hover {
-  background: rgba($red, 0);
-  font-weight: 900;
-  letter-spacing: 1px;
-  
-  rect {
-    stroke-width: 5;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-  }
-}
-
-
-*{
-  box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
 }
 
 
@@ -131,49 +26,47 @@ btn {
 	.flexbox{
 		position:fixed;
 		bottom:120px;
-		// width: 100%;
+		width: 100%;
 		display: flex;
-  		margin-left:40%;
 		justify-content: center;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 400;
 	}
 
-	h2{
-		position:fixed;
-		letter-spacing: 10px;
-		margin-top: 8%;
-		font-size: 4.5em;
-		text-transform: uppercase;
-		// text-shadow: 3px 5px  black;
+	button{
+		border:1px solid white;
+		background:transparent;
 		color: white;
-		text-align: center;
-		width: 80%;
-		margin-left: 10%;
-		font-family: 'Raleway', sans-serif;
-		transition: 1s ease-in-out;
-		opacity: .7;
-		}
+		font-size: 2.5em;
+		padding: .5em 1em;
+		font-family: 'Work Sans', sans-serif;
+		font-weight:200;
+	}
 
 	h1{
 		position:fixed;
 		letter-spacing: 10px;
-		margin-top:16%;
-		font-size: 12em;
-		text-transform: uppercase;
-		// text-shadow: 3px 5px  black;
+		margin-top: 6%;
+		font-size: 9em;
+		text-shadow: 3px 5px  black;
 		color: white;
 		text-align: center;
-		width: 80%;
-		margin-left: 10%;
-		font-family: 'Raleway', sans-serif;
+		width: 100%;
+		font-family: 'Amatic SC';
 		transition: 1s ease-in-out;
 
+
+
+		span{
+			font-size: 2em;
+		}
+
 	}
+
+	// h1:hover{
+	// 	transform: scale(2.2, 2.2);
+	// 	color: black;
+	// 	text-shadow: 3px 5px  white;
+	// }
 }
-
-
-
 
 .fullscreen-bg {
     position: fixed;
@@ -214,13 +107,12 @@ btn {
 		
 		h1{
 			position:absolute;
-			margin-top: 40%;
-			font-size: 5em;
-			line-height: 1.3em;
+			margin-top: 35%;
+			font-size: 9em;
 			color: white;
 			text-align: center;
 			width: 100%;
-			font-family: 'Raleway', sans-serif;
+			font-family: 'Amatic SC';
 		}
 
 		p{
@@ -241,20 +133,8 @@ btn {
 	background: url("../img/butterfly.png");
 	background-position:top center;
 	background-size:cover;
-	
-	h1{
-		position:absolute;
-		margin-top: 28%;
-		font-size: 5em;
-		line-height: 1.3em;
-		color: white;
-		text-align: center;
-		width: 50%;
-		margin-left: 25%;
-		font-family: 'Raleway', sans-serif;
-	}
-
 }
+
 
 .page4{
 	// margin-bottom:300vh;
@@ -272,14 +152,95 @@ btn {
 	h2{
 		font-family: 'Helvetica';
 		color: white;
-		font-size: 3em;
-		width: 50%;
+		font-size: 2.4em;
+		font-weight: lighter;
 		text-align: left;
 		padding-left:30px;
+		padding-top: 30px;
+		line-height: 1.2;
+		-webkit-animation: rainbow 7s infinite;
 	}
 }
 
 .ending{
 	background: rgba(0,0,0,0.6);
 }
+
+input {
+	background: none;
+	width: 100px;
+	height: 40px;
+	-webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+}
+
+form {
+	color: white;
+	
+	font-size: 30px;
+	padding-bottom: 300px;
+}
+
+.page5 {
+	font-family: 'Helvetica';
+	display: flex;
+}
+
+.slogan {
+	width: 50%;
+}
+
+.singin {
+	margin-top: 40px;
+	font-size: 28px;
+	font-weight: lighter;
+	display: flex;
+	margin-left: 30px;
+   
+}
+
+input {
+	font-family: 'Helvetica';
+	color: white;
+	font-size: 25px;
+	font-weight: lighter;
+	padding-left: 10px;
+}
+
+input:focus { 
+    background-color: rgba(255, 255, 255, 0.2); 
+    width: 270px;
+    border-color: white;
+    outline: none !important;
+}
+
+.bt-signup {
+	font-family: 'Helvetica';
+	color: white;
+	font-size: 28px;
+	font-weight: lighter;
+	padding: 7px;
+	border: white solid 1px;
+	width: 130px;
+	text-align: center;
+	height: 30px;
+    margin-left: 10px;
+
+}
+
+.bt-signup:hover {
+	cursor: pointer;
+	color: grey;
+}
+
+@-webkit-keyframes rainbow {
+    0%   {color:purple }
+    20%  {color:#fbf65f}
+    40%  {color:orange}
+    60%  {color:hotpink}
+    80%  {color:aqua}
+    100% {color:purple}
+}
+
+
 
